@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zolkan - Seguimiento de Compra</title>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/0084ee0011.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    /> -->
+	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <section class="purchase-traking">
+        <section class="information">
+          <!-- <h1 class="information__title">Seguimiento de Compra</h1> -->
+      
+          <!-- Información de compra -->
+          <div class="information__boxes">
+            <div class="information__box">
+              <span class="information__img"><i class="fas fa-calendar"></i></span>
+              <span class="information__text">
+                Fecha de compra: <br class="information__br">
+                <span class="purchase-traking__insert-info">31 de Julio de 2020</span>
+              </span>
+            </div>
+      
+            <div class="information__box">
+              <span class="information__img">
+                <i class="fas fa-shopping-bag"></i>
+              </span>
+              <span class="information__text">
+                Despacho <br class="information__br">
+                <span class="purchase-traking__insert-info">Domicilio</span>
+              </span>
+            </div>
+          </div>
+          <hr />
+        </section>
+      
+        <section class="traking">
+          <h2 class="traking__title">
+            <i class="fas fa-info-circle"></i> Te informamos que:
+          </h2>
+          <p class="traking__text">
+            Tu compra <span class="purchase-traking__insert-info-2"><strong>000012636</strong></span> será despachada a <strong>El Peumo 108 B, Lo Barnechea 108, Santiago - Metropolitana de Santiago</strong> y el estado del despacho es el siguiente:
+          </p>
+          <div class="traking__states">
+      
+            <!-- Recibimos tu Compra -->
+            <div class="traking__state">
+              <div class="traking__state__left__complete">
+                <i class="fas fa-check-circle traking__state__icon"></i>
+              </div>
+      
+              <div class="traking__state__right">
+                <p class="traking__state__date">
+                  <span>31.07.2020</span> - <span>19:20</span> hrs.
+                </p>
+                <p class="traking__state__title">
+                  RECIBIMOS TU COMPRA
+                </p>
+              </div>
+            </div>
+      
+            <!-- En Preparación -->
+            <div class="traking__state">
+              <div class="traking__state__left__start">
+                <i class="fas fa-check-circle traking__state__icon"></i>
+              </div>
+      
+              <div class="traking__state__right">
+                <p class="traking__state__date">
+                  <span>04.08.2020</span> - <span>17:08</span> hrs.
+                </p>
+                <p class="traking__state__title">
+                  EN PREPARACIÓN
+                </p>
+              </div>
+            </div>
+      
+            <!-- Entregado al Transportista -->
+            <div class="traking__state">
+              <div class="traking__state__left__inactive">
+                <i class="fas fa-circle traking__state__icon"></i>
+              </div>
+      
+              <div class="traking__state__right">
+                <p class="traking__state__date">
+                  <!-- <span>30.05.2018</span> - <span>17:30</span> hrs. -->
+                </p>
+                <p class="traking__state__title">
+                  ENTREGADO AL TRANSPORTISTA
+                </p>
+              </div>
+            </div>
+      
+            <!-- En Reparto -->
+            <div class="traking__state">
+              <div class="traking__state__left__inactive">
+                <i class="fas fa-circle traking__state__icon"></i>
+              </div>
+      
+              <div class="traking__state__right">
+                <p class="traking__state__date">
+                  <!-- <span>30.05.2018</span> - <span>17:30</span> hrs. -->
+                </p>
+                <p class="traking__state__title">
+                  EN REPARTO
+                </p>
+              </div>
+            </div>
+      
+            <!-- Entregado -->
+            <div class="traking__state">
+              <div class="traking__state__left__end">
+                <i class="fas fa-circle traking__state__icon inactive"></i>
+              </div>
+      
+              <div class="traking__state__right">
+                <p class="traking__state__date">
+                  <span>10.08.2018</span> <!-- - <span>17:30</span> hrs. -->
+                </p>
+                <p class="traking__state__title">
+                  ENTREGADO
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  </body>
+</html>
