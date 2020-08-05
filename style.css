@@ -72,8 +72,6 @@
 .purchase-traking {
 	color: var(--black);
 	font-family: var(--avenir-roma);
-	max-width: 960px;
-	margin: 0 auto;
 }
 
 .purchase-traking__insert-info {
@@ -174,9 +172,13 @@
 	position: absolute;
 	width: 4px;
 	background-color: var(--orange-circle);
-	height: 2rem;
+	height: 2.5rem;
 	top: 1.5rem;
 	right: 1.25rem;
+}
+
+.traking__state__left::before .color-yellow {
+	background-color: var(--yellow-circle) !important;
 }
 
 .traking__state__date {
@@ -278,8 +280,8 @@
 
 @media screen and (min-width: 960px) {
 	.traking__state__left::before {
-		height: 7.9rem;
-		top: -3.1rem;
-		right: -3.5rem;
+		height: 9.6rem;
+		top: -3.9rem;
+		right: -4.1rem;
 	}
 }
