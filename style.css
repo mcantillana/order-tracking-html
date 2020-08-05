@@ -175,6 +175,7 @@
 	height: 2.5rem;
 	top: 1.5rem;
 	right: 1.25rem;
+	z-index: -1;
 }
 
 .traking__state__left::before .color-yellow {
