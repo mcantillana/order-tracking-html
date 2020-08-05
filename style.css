@@ -160,14 +160,36 @@
 	padding: 0;
 }
 
-.traking__state__left,
-.traking__state__left__end {
+.traking__state__left__start .fas,
+.traking__state__left__complete .fas,
+.traking__state__left__end .complete {
+	color: var(--orange-circle);
+}
+
+.traking__state__left__pending .fas,
+.traking__state__left__end .pending {
+	color: var(--yellow-circle);
+}
+
+.traking__state__left__inactive .fas,
+.traking__state__left__end .inactive {
+	color: var(--gray-circle);
+}
+
+.traking__state__left__start,
+.traking__state__left__complete,
+.traking__state__left__end,
+.traking__state__left__pending,
+.traking__state__left__inactive {
 	margin: 0 auto;
 	position: relative;
 	max-width: 100px;
 }
 
-.traking__state__left::before {
+.traking__state__left__start::before,
+.traking__state__left__complete::before,
+.traking__state__left__pending::before,
+.traking__state__left__inactive::before {
 	content: "";
 	position: absolute;
 	width: 4px;
@@ -175,10 +197,20 @@
 	height: 2.5rem;
 	top: 1.5rem;
 	right: 1.25rem;
+	z-index: -1;
 }
 
-.traking__state__left::before .color-yellow {
-	background-color: var(--yellow-circle) !important;
+.traking__state__left__start::before {
+	background-color: var(--gray-circle);
+}
+
+.traking__state__left__complete::before {
+	background-color: var(--orange-circle);
+}
+
+.traking__state__left__pending::before,
+.traking__state__left__inactive::before {
+	background-color: var(--gray-circle);
 }
 
 .traking__state__date {
@@ -257,7 +289,11 @@
 		text-align: center;
 	}
 
-	.traking__state__left::before {
+	.traking__state__left::before,
+	.traking__state__left__start::before,
+	.traking__state__left__complete::before,
+	.traking__state__left__pending::before,
+	.traking__state__left__inactive::before {
 		transform: rotate(90deg);
 		height: 5.5rem;
 		top: -2rem;
@@ -279,7 +315,11 @@
 }
 
 @media screen and (min-width: 960px) {
-	.traking__state__left::before {
+	.traking__state__left::before,
+	.traking__state__left__start::before,
+	.traking__state__left__complete::before,
+	.traking__state__left__pending::before,
+	.traking__state__left__inactive::before {
 		height: 9.6rem;
 		top: -3.9rem;
 		right: -4.1rem;
