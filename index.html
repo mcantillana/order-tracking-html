@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zolkan - Seguimiento de Compra</title>
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/0084ee0011.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Font -->
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    /> -->
+	
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="deco__orange">
+
+    </div>
+    <section class="purchase-traking">
+      <section class="information">
+        <h1 class="information__title">Seguimiento de Compra</h1>
+
+        <!-- Información de compra -->
+        <div class="information__boxes">
+          <div class="information__box">
+            <span class="information__img"><i class="fas fa-calendar"></i></span>
+            <span class="information__text">
+              Fecha de compra: <br class="information__br">
+              <span class="purchase-traking__insert-info">30.05.2018</span>
+            </span>
+          </div>
+
+          <div class="information__box">
+            <span class="information__img">
+              <i class="fas fa-shopping-bag"></i>
+            </span>
+            <span class="information__text">
+              Despacho <br class="information__br">
+              <span class="purchase-traking__insert-info">Domicilio</span>
+            </span>
+          </div>
+        </div>
+        <hr />
+      </section>
+
+      <section class="traking">
+        <h2 class="traking__title">
+          <i class="fas fa-info-circle"></i> Te informamos que:
+        </h2>
+        <p class="traking__text">
+          El estado de despacho de tu compra <span class="purchase-traking__insert-info">34555</span> es el siguiente:
+        </p>
+        <div class="traking__states">
+
+          <!-- Recibimos tu Compra -->
+          <div class="traking__state">
+            <div class="traking__state__left">
+              <i class="fas fa-check-circle traking__state__icon color-orange"></i>
+            </div>
+
+            <div class="traking__state__right">
+              <p class="traking__state__date">
+                <span>30.05.2018</span> - <span>17:30</span> hrs.
+              </p>
+              <p class="traking__state__title">
+                RECIBIMOS TU COMPRA
+              </p>
+            </div>
+          </div>
+
+          <!-- En Preparación -->
+          <div class="traking__state">
+            <div class="traking__state__left">
+              <i class="fas fa-check-circle traking__state__icon color-orange"></i>
+            </div>
+          
+            <div class="traking__state__right">
+              <p class="traking__state__date">
+                <span>30.05.2018</span> - <span>17:30</span> hrs.
+              </p>
+              <p class="traking__state__title">
+                EN PREPARACIÓN
+              </p>
+            </div>
+          </div>
+
+          <!-- Entregado al Transportista -->
+          <div class="traking__state">
+            <div class="traking__state__left">
+              <i class="fas fa-check-circle traking__state__icon color-orange"></i>
+            </div>
+          
+            <div class="traking__state__right">
+              <p class="traking__state__date">
+                <span>30.05.2018</span> - <span>17:30</span> hrs.
+              </p>
+              <p class="traking__state__title">
+                ENTREGADO AL TRANSPORTISTA
+              </p>
+            </div>
+          </div>
+
+          <!-- En Reparto -->
+          <div class="traking__state">
+            <div class="traking__state__left">
+              <i class="fas fa-exclamation-circle traking__state__icon color-yellow"></i>
+            </div>
+          
+            <div class="traking__state__right">
+              <p class="traking__state__date">
+                <span>30.05.2018</span> - <span>17:30</span> hrs.
+              </p>
+              <p class="traking__state__title">
+                EN REPARTO
+              </p>
+            </div>
+          </div>
+
+          <!-- Entregado -->
+          <div class="traking__state">
+            <div class="traking__state__left__end">
+              <i class="fas fa-circle traking__state__icon color-gray"></i>
+            </div>
+          
+            <div class="traking__state__right">
+              <p class="traking__state__date">
+                <span>30.05.2018</span> - <span>17:30</span> hrs.
+              </p>
+              <p class="traking__state__title">
+                ENTREGADO
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>
